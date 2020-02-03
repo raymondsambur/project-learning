@@ -1,43 +1,67 @@
 .background{
     width: 100vw;
     min-width: 320px;
-    height: 100vh;
     text-align: -webkit-center;
-    position: relative;
     margin: 0 auto;
-    background: linear-gradient(0deg, rgba(71,92,122,1) 0%, rgba(104,93,121,1) 20%, rgba(171,108,130,1) 40%, rgba(216,115,127,1) 60%, rgba(255,138,91,1) 80%);
     .card{
-        min-width: 300px;
+        display: -webkit-inline-box;
+        min-width: 680px;
         min-height: 300px;
-        width: 25vw;
-        height: 25vw;
-        top: 25vh;
-        background-color: #ff8a5b;        
-        box-shadow: 5px 5px 10px #625c5c;
-        border-radius: 2rem;
-        .card-content{
+        width: 680px;
+        margin-top: 25vh;;
+        box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1),4px 4px 15px -5px rgba(21,114,232,.4)!important;
+        border-radius: 5px;
+        .card-left{
+            border-right: 1px solid #e5e5e5;
+            padding:20px;
+            background-color: #4f86c4;
+            width: 50%;
+            .cl-header{
+                color: white;
+            }
+            .cl-body{
+
+            }
+            .cl-footer{
+
+            }
+        }
+        .card-right{
+            width: 50%;
             text-align: center;
-            padding: 10px;
+            padding:20px;
             input{
                 width: 250px;
             }
-            .logo{
-                background-image: url("/../../assets/logo-circle-technology-clip-art-circle.jpg");
-                background-size: auto;
-            }
-            .login-header{
+            .cr-header{
                 padding-top: 10px;
+                color: #4f86c4;
             }
-            .username-field{
+            .cr-username-field{
                 padding-top: 40px;
                 padding-bottom: 50px;
                 text-align: -webkit-center;
             }
-            .password-field{
+            .cr-password-field{
                 text-align: -webkit-center;
             }
-            .login-button{
-                padding-top: 40px;
+            .cr-login-button{
+                padding-top: 10px;
+                
+                .btn-login{
+                    background-color: #4f86c4;
+                    color: white;
+                    border: 1px solid #4f86c4;
+                }
+                .btn-login:hover{
+                    background-color: white;
+                    color: #4f86c4;
+                    border: 1px solid #4f86c4;
+                }    
+            }
+            .cr-forgot-password{
+                padding: 10px;
+                text-align: right;
             }
         }
     }
@@ -52,6 +76,14 @@
 }
 
 #login{
-    border: 1px solid;
+    // border: 1px solid;
     border-radius: 5px;
+}
+
+#forgot-password{
+    text-decoration: none;
+    color: #4f86c4;
+    font-size: 14px;
+    width: 250px;
+    padding-right: 15px;
 }
