@@ -1,18 +1,27 @@
 <div class="background">
     <div class="card">
-        <div class="card-content">
-            <div class="login-header">
-                <h3>Test</h3>
+        <div class="card-left">
+            <div class="cl-header">Company Name</div>
+            <div class="cl-body"></div>
+            <div class="cl-footer"></div>
+        </div>
+        <div class="card-right">
+            <div class="cr-header">
+                <h3>Login</h3>
             </div>
-            <div class="username-field">
-                <input type="text" class="form-control" id="username" [(ngModel)]=username_field>
+            <div class="cr-username-field">
+                <input type="text" class="form-control" id="username" placeholder="Username" [(ngModel)]=username_field>
             </div>
-            <div class="password-field">
+            <div class="cr-password-field">
                 <input type="text" class="form-control" id="password" [(ngModel)]=password_field>
             </div>
-            <div class="login-button">
-                <button class="btn" id="login" (click)=login()>Login</button>
+            <div class="cr-forgot-password">
+                <a id="forgot-password" href="">Forgot Password?</a>
             </div>
+            <div class="cr-login-button">
+                <button class="btn btn-login" id="login" (click)=login()>Login</button>
+            </div>
+            
         </div>
     </div>
 </div>

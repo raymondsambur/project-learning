@@ -40,8 +40,6 @@ export class LoginComponent implements OnInit {
       if(this.username_field == element.username && this.password_field == element.password){
         console.log("True", this.validation_data[index])
       }
-      // if else
-      // }
     })
   }
 
